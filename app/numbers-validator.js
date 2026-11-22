@@ -12,7 +12,6 @@ class NumbersValidator {
     }
   }
 
-
   /**
    * @param {Array<Number>} arrayOfNumbers array of numbers to go through
    * @return {Array<Number>} array of even numbers
@@ -24,7 +23,6 @@ class NumbersValidator {
     throw new Error(`[${arrayOfNumbers}] is not an array of "Numbers"`);
   }
 
-
   /**
    * @param {Array<Number>} arrayOfNumbers array of numbers to go through
    * @return {Boolean} true if all are numbers
@@ -35,7 +33,6 @@ class NumbersValidator {
     }
     return arrayOfNumbers.every(n => typeof n === 'number');
   }
-
 
   /**
    * Check if passed value is integer
@@ -49,6 +46,5 @@ class NumbersValidator {
     return Number.isInteger(n);
   }
 }
-
 
 module.exports = NumbersValidator;
